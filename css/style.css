@@ -1,0 +1,343 @@
+/*
+
+	Welcome, fellow CSS enthusiast. I hope you like what you see.
+
+*/
+
+body {
+	font-family:Helvetica;
+	font-size:11pt;
+	color:#454545;
+	padding:0;
+	margin:0;
+	text-shadow:0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+h1, h2, h3, h4 {
+	color:#353535;
+	line-height:1em;
+}
+
+h1, h2 {
+	margin:30pt 0 10pt 0;
+}
+
+h4, h5, h6 {
+	margin:10pt 0;
+}
+
+h1 {
+	margin-top:0;
+	font-size:48pt;
+	text-transform:uppercase;
+	line-height:0.8725em;
+}
+
+h2 {
+	margin-top:0;
+	font-size:28pt;
+}
+
+h3 {
+	margin:20pt 0 10pt;
+	font-size:22pt;
+}
+
+h4 {
+	font-size:18pt;
+}
+
+img {
+	width:100%;
+}
+
+a {
+	position:relative;
+	color:lightblue;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a img {
+	border:none;
+}
+
+p {
+	margin:20pt 0 30pt;
+	line-height:1.75em;
+}
+
+ul {
+	list-style:none;
+	padding:0 0 0 30px;
+	line-height:1.75em;
+}
+
+em {
+	font-weight:bold;
+}
+
+/* Giant gif and some container margins/padding */
+.Backdrop {
+	position:fixed;
+	top:0;
+	left:0;
+	min-width:100%;
+	min-height:200pt;
+	min-height:45vh;
+	z-index:-1;
+}
+
+.Content {
+	background-color:#fff;
+	margin-top:180pt;
+	margin-top:40vh;
+}
+
+div.Wrapper {
+	margin:0 auto;
+	max-width:960px;
+	padding:0 10pt 30pt;
+}
+
+div.Wrapper:after {
+	content:".";
+	clear:both;
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+
+.Content > div.Wrapper {
+	padding-top:30pt;
+}
+
+/* Portrait/Skinny Layout (default) */
+.Profile {
+	padding-left:8pt;
+}
+
+.Profile h2 {
+	line-height:1.125em;
+}
+
+.Profile .Photo {
+	position:relative;
+	float:left;
+	width:140px;
+	margin:-50pt 20pt 12pt 0;
+}
+
+.Profile .Photo img {
+	border:8px solid #fff;
+	border-radius:50%;
+	margin-left:-10px;
+}
+
+.Profile .Info {
+	float:left;
+}
+
+.Profile .Info:after {
+	content:".";
+	clear:both;
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+
+.Profile ul {
+	font-size:13pt;
+}
+
+.Profile .Address {
+	margin-right:20pt;
+}
+
+.Profile .Address ul {
+	font-size:14pt;
+	line-height:1.25em;
+}
+
+.Profile .Contact, .Profile .Address {
+	float:left;
+}
+
+.Profile .Contact ul li:after {
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+	clear:both;
+}
+
+.Profile .Contact ul li label {
+	display:inline-block;
+	float:left;
+	width:60px;
+	font-weight:bold;
+	text-align:right;
+}
+
+.Profile .Contact ul li span {
+	display:inline-block;
+	float:left;
+	padding-left:6pt;
+}
+
+.Profile .Contact ul li label:after {
+	content:":";
+}
+
+.Resume h2 {
+	border-bottom:1px solid #353535;
+	padding-bottom:10pt;
+	margin-bottom:30pt;
+}
+
+.Resume > .Wrapper > div {
+	margin-bottom:60px;
+}
+
+.Resume .About p {
+	position:relative;
+	z-index:10;
+
+	margin-left:40pt;
+	padding-right:10pt;
+
+	color:#656565;
+	font-family:Georgia;
+	font-size:18pt;
+	font-style:italic;
+	
+	text-align:justify;
+	line-height:1.5em;
+}
+
+.Resume .About p:first-child:after {
+	content:"\275D"; /* \201C */
+	position:absolute;
+	top:-10pt;
+	left:-60pt;
+	z-index:-1;
+	color:#e5e5e5;
+	font-size:92pt;
+}
+
+.Resume .Skills ul {
+	padding-left:60px;
+	font-size:16pt;
+	line-height:2em;
+}
+
+.Resume .Skills ul li {
+	position:relative;
+}
+
+.Resume .Skills ul li:before {
+	content:"\2714";
+	position:absolute;
+	left:-1.5em;
+	top:0;
+	color:lightgreen;
+	font-size:1.5em;
+}
+
+.Resume .Experience .Job h4:before {
+	content:"\00a0 at";
+	
+	color:#959595;
+	font-family:Georgia;
+	font-size:16pt;
+	font-weight:normal;
+	font-style:italic;
+
+	padding-right:10pt;
+}
+
+/* l'exception, yo */
+@media screen and (min-width: 860px) {
+	.Backdrop {
+		top:-12.5%;
+		min-height:400pt;
+		min-height:75vh;
+	}
+
+	.Content {
+		margin-top:380pt;
+		margin-top:50vh;
+		padding:0 30pt;
+	}
+
+	.Profile, .Resume {
+		float:left;
+	}
+
+	.Profile {
+		margin-top:-80pt;
+		padding-left:0;
+		width:33%;
+	}
+
+	.Profile .Photo {
+		width:auto;
+		float:none;
+	}
+
+	.Profile .Info {
+		float:none;
+	}
+
+	.Profile .Photo {
+		margin:0 0 20pt 0;
+	}
+
+	.Profile .Photo img {
+		/*margin-left:20pt;*/
+		width:66.67%;
+	}
+
+	h1 {
+		font-size:4vw;
+	}
+
+	.Profile h2 {
+		font-size:2.75vw;
+	}
+
+	.Profile h3 {
+		font-size:2.25vw;
+	}
+
+	.Resume {
+		width:67%;
+	}
+
+	.Resume .About p {
+		margin-left:60pt;
+	}
+}
+
+
+@media screen and (max-width: 470px) {
+	h1 {
+		font-size:13vw;
+	}
+
+	.Profile h2 {
+		font-size:8vw;
+	}
+
+	.Resume .About p {
+		font-size:15pt;
+		margin-left:22pt;
+	}
+
+	.Resume .Skills ul {
+		font-size:14pt;
+	}
+}
