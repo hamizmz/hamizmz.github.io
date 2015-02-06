@@ -128,6 +128,8 @@ div.Wrapper:after {
 }
 
 .Profile h2 {
+	font-family:'Playfair Display', Georgia, serif;
+	font-weight:normal;
 	line-height:1.125em;
 }
 
@@ -212,7 +214,7 @@ div.Wrapper:after {
 .Resume h3 {
 	color:#777;
 	margin:20pt 0 10pt;
-	font-family:Georgia;
+	font-family:'Playfair Display', Georgia, serif;
 	font-weight:normal;
 }
 
@@ -228,7 +230,7 @@ div.Wrapper:after {
 	padding-right:10pt;
 
 	color:#656565;
-	font-family:Georgia;
+	font-family:Georgia, serif;
 	font-size:18pt;
 	font-style:italic;
 	
@@ -236,13 +238,16 @@ div.Wrapper:after {
 }
 
 .Resume .About p:first-child:after {
-	content:"\275D"; /* \201C */
+	content:"\201C";
 	position:absolute;
-	top:-10pt;
-	left:-60pt;
+	top:20pt;
+	left:-51pt;
 	z-index:-1;
-	color:#e5e5e5;
-	font-size:92pt;
+	color:#efefef;
+
+	font-family:'Playfair Display', Georgia, serif;
+	font-style:italic;
+	font-size:200pt;
 }
 
 .Resume .Skills ul {
@@ -270,7 +275,7 @@ div.Wrapper:after {
 	margin:0 0 40pt;
 }
 
-.Resume .Experience .Job h4:before {
+/*.Resume .Experience .Job h4:before {
 	content:"\00a0 at";
 	
 	color:#959595;
@@ -280,6 +285,11 @@ div.Wrapper:after {
 	font-style:italic;
 
 	padding-right:10pt;
+}*/
+
+.Resume .Experience .Job .TimeFrame {
+	color:#aaa;
+	padding-left:1px;
 }
 
 /* l'exception, yo */
