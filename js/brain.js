@@ -18,14 +18,18 @@ window.brain = new (function Brain(Math) {
 		'bacon.gif',
 		'banana.gif',
 		'coffee.gif',
-		'coffeesteam.gif',
 		'future.gif',
 		'makeitrain.gif',
 		'panda.gif',
-		'makeitrain.gif', // yup... happens twice
 		'patrick.gif',
 		'sausages.gif',
-		'ui.gif'
+		'ui.gif',
+		'truth.gif',
+		'internet.gif',
+		'scream.gif',
+		'rugrats.gif',
+		'grid.gif',
+		'homer.gif'
 	];
 	var AVATAR_FILES = [
 		'smug.jpg',
