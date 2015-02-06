@@ -28,7 +28,6 @@ window.brain = new (function Brain(Math) {
 		'internet.gif',
 		'scream.gif',
 		'rugrats.gif',
-		'grid.gif',
 		'homer.gif'
 	];
 	var AVATAR_FILES = [
