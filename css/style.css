@@ -39,10 +39,6 @@ h2 {
 }
 
 h3 {
-	color:#777;
-	margin:20pt 0 10pt;
-	font-family:Georgia;
-	font-weight:normal;
 	font-size:22pt;
 }
 
@@ -211,6 +207,13 @@ div.Wrapper:after {
 	border-bottom:1px solid #353535;
 	padding-bottom:10pt;
 	margin-bottom:30pt;
+}
+
+.Resume h3 {
+	color:#777;
+	margin:20pt 0 10pt;
+	font-family:Georgia;
+	font-weight:normal;
 }
 
 .Resume > .Wrapper > div {
