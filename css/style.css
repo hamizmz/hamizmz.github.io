@@ -134,6 +134,7 @@ div.Wrapper:after {
 }
 
 .Profile h3 {
+	color:#999;
 	font-size:18pt;
 }
 
@@ -258,6 +259,7 @@ div.Wrapper:after {
 
 .Resume .Skills ul li {
 	position:relative;
+	margin-bottom:10pt;
 }
 
 .Resume .Skills ul li:before {
