@@ -31,11 +31,11 @@ window.website = new (function Website(document, brain, scroller) {
 	};
 
 	function start_avatar_timer() {
-		_avatar_timer = setInterval(render_avatar, brain.get_num_in_range(6000, 8000));
+		_avatar_timer = setInterval(render_avatar, brain.get_num_in_range(12000, 16000));
 	};
 
 	function start_backdrop_timer() {
-		_backdrop_timer = setInterval(render_backdrop, brain.get_num_in_range(2000, 5000));
+		_backdrop_timer = setInterval(render_backdrop, brain.get_num_in_range(8000, 10000));
 	};
 
 	function render_images() {
