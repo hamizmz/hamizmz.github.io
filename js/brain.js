@@ -23,7 +23,6 @@ window.brain = new (function Brain(Math) {
 		'panda.gif',
 		'patrick.gif',
 		'sausages.gif',
-		'ui.gif',
 		'truth.gif',
 		'internet.gif',
 		'scream.gif',
@@ -35,7 +34,9 @@ window.brain = new (function Brain(Math) {
 		'cat.jpg',
 		'style.jpg',
 		'anger.jpg',
-		'danger.jpg'
+		'danger.jpg',
+		'hat.jpg',
+		'peace.jpg'
 	];
 
 	// returns a number between 0 and max
@@ -44,7 +45,7 @@ window.brain = new (function Brain(Math) {
 	}
 
 	var get_num_in_range = this.get_num_in_range = function(min, max) {
-		return get_rand_num(max - min) + min;
+		return get_randfil_num(max - min) + min;
 	};
 
 	var get_rand_item = this.get_rand_item = function(list) {

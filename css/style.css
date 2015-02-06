@@ -3,6 +3,9 @@
 	Welcome, fellow CSS enthusiast. I hope you like what you see.
 
 */
+* {
+	outline:none;
+}
 
 body {
 	font-family:Helvetica, Arial, sans-serif;
@@ -79,18 +82,18 @@ em {
 /* Giant gif and some container margins/padding */
 .Backdrop {
 	position:fixed;
-	top:0;
+	top:-6.25%;
 	left:0;
 	min-width:100%;
-	min-height:200pt;
-	min-height:45vh;
+	min-height:300pt;
+	min-height:60vh;
 	z-index:-1;
 }
 
 .Content {
 	background-color:#fff;
 	margin-top:180pt;
-	margin-top:40vh;
+	margin-top:50vh;
 }
 
 div.Wrapper {
@@ -105,6 +108,22 @@ div.Wrapper:after {
 	display:block;
 	height:0;
 	visibility:hidden;
+}
+
+#top_btn {
+	color:#656565;
+	float:right;
+	background-color:transparent;
+	border:none;
+	margin:0;
+	padding:0;
+	font-size:16pt;
+}
+
+#top_btn:before {
+	content:"\21E7";
+	padding:6pt 6pt 0 0;
+	font-size:22pt;
 }
 
 .Content > div.Wrapper {
@@ -126,6 +145,10 @@ div.Wrapper:after {
 
 .Profile h3 {
 	font-size:18pt;
+}
+
+.Profile p {
+	color:#aaa;
 }
 
 .Profile .Photo {
@@ -204,6 +227,10 @@ div.Wrapper:after {
 	margin-bottom:80px;
 }
 
+.Resume > .Wrapper > div:last-child {
+	margin-bottom:0;
+}
+
 .Resume h2 {
 	border-bottom:1px solid #353535;
 	padding-bottom:10pt;
@@ -265,7 +292,8 @@ div.Wrapper:after {
 }
 
 .Resume .Experience > p {
-	font-size:14pt;
+	font-style:italic;
+	font-size:16pt;
 	margin-bottom:30pt;
 }
 
@@ -290,6 +318,47 @@ div.Wrapper:after {
 	padding-left:1px;
 }
 
+footer {
+	display:block;
+	color:#e5e5e5;
+	background-color:#353535;
+	margin:0;
+	padding:0;
+}
+
+footer .Wrapper {
+	padding:20pt 40pt 20pt;
+	margin:0 auto;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4 {
+	color:#e5e5e5;
+	margin:0 0 10pt;
+}
+
+footer .Wrapper > * {
+	float:left;
+	min-width:240px;
+	max-width:42%;
+	margin:0 40pt 20pt 0 !important;
+}
+
+footer .Wrapper > *:last-child {
+	margin-right:0 !important;
+	min-width:0;
+}
+
+footer p {
+	font-family:'Playfair Display', Georgia, serif;
+	font-size:13pt;
+	line-height:1.375;
+	letter-spacing:1px;
+	margin:0 0 10pt;
+}
+
 /* l'exception, yo */
 @media screen and (min-width: 860px) {
 
@@ -297,15 +366,8 @@ div.Wrapper:after {
 		font-size:36pt;
 	}
 
-	.Backdrop {
-		top:-12.5%;
-		min-height:400pt;
-		min-height:75vh;
-	}
-
 	.Content {
 		margin-top:380pt;
-		margin-top:50vh;
 		padding:0 30pt;
 	}
 
@@ -346,6 +408,14 @@ div.Wrapper:after {
 
 	.Resume .About p {
 		margin-left:60pt;
+	}
+
+	footer h2 {
+		font-size:5vw;
+	}
+
+	footer .Wrapper > *:last-child {
+		float:right;
 	}
 }
 
