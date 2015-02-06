@@ -45,7 +45,7 @@ window.brain = new (function Brain(Math) {
 	}
 
 	var get_num_in_range = this.get_num_in_range = function(min, max) {
-		return get_randfil_num(max - min) + min;
+		return get_rand_num(max - min) + min;
 	};
 
 	var get_rand_item = this.get_rand_item = function(list) {

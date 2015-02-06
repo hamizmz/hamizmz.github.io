@@ -1,4 +1,7 @@
 window.website = new (function Website(document, brain, scroller) {
+	var _avatar_timer = null;
+	var _backdrop_timer = null;
+
 	var _backdrop = document.getElementById('backdrop');
 	var _avatar = document.getElementById('avatar');
 	var _email_anchor = document.getElementById('email');
@@ -18,10 +21,21 @@ window.website = new (function Website(document, brain, scroller) {
 		_back_to_top.addEventListener('click', scroll_to_top, false);
 		_avatar.addEventListener('click', render_avatar, false);
 		_backdrop.addEventListener('click', render_backdrop, false);
+
+		start_avatar_timer();
+		start_backdrop_timer();
 	};
 
 	function scroll_to_top() {
 		scroller.scroll_to(0);
+	};
+
+	function start_avatar_timer() {
+		_avatar_timer = setInterval(render_avatar, brain.get_num_in_range(6000, 8000));
+	};
+
+	function start_backdrop_timer() {
+		_backdrop_timer = setInterval(render_backdrop, brain.get_num_in_range(2000, 5000));
 	};
 
 	function render_images() {
