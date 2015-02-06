@@ -5,7 +5,7 @@
 */
 
 body {
-	font-family:Helvetica;
+	font-family:Helvetica, Arial, sans-serif;
 	font-size:11pt;
 	color:#454545;
 	padding:0;
@@ -128,14 +128,15 @@ div.Wrapper:after {
 }
 
 .Profile h2 {
+	color:#656565;
 	font-family:'Playfair Display', Georgia, serif;
 	font-weight:normal;
 	line-height:1.125em;
 }
 
 .Profile h3 {
-	color:#999;
 	font-size:18pt;
+	margin-bottom:10pt;
 }
 
 .Profile .Photo {
@@ -172,8 +173,10 @@ div.Wrapper:after {
 }
 
 .Profile .Address ul {
+	color:#656565;
+	font-family:'Playfair Display', Georgia, serif;
 	font-size:14pt;
-	line-height:1.25em;
+	line-height:1.375em;
 }
 
 .Profile .Contact, .Profile .Address {
@@ -199,6 +202,8 @@ div.Wrapper:after {
 .Profile .Contact ul li span {
 	display:inline-block;
 	float:left;
+	color:#656565;
+	font-family:'Playfair Display', Georgia, serif;
 	padding-left:6pt;
 }
 
@@ -241,7 +246,7 @@ div.Wrapper:after {
 .Resume .About p:first-child:after {
 	content:"\201C";
 	position:absolute;
-	top:20pt;
+	top:30pt;
 	left:-51pt;
 	z-index:-1;
 	color:#efefef;
@@ -272,7 +277,6 @@ div.Wrapper:after {
 }
 
 .Resume .Experience > p {
-	color:#656565;
 	font-size:14pt;
 	margin:0 0 40pt;
 }
