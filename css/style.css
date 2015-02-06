@@ -10,32 +10,28 @@ body {
 	color:#454545;
 	padding:0;
 	margin:0;
-	text-shadow:0 1px 1px rgba(255, 255, 255, 0.8);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
 	color:#353535;
 	line-height:1em;
 }
 
-h1, h2 {
-	margin:30pt 0 10pt 0;
-}
-
-h4, h5, h6 {
+h3, h4, h5, h6 {
 	margin:10pt 0;
 }
 
 h1 {
-	margin-top:0;
 	font-size:48pt;
-	text-transform:uppercase;
+	letter-spacing:-3px;
 	line-height:0.8725em;
+	text-transform:uppercase;
+	margin:0 0 10pt;
 }
 
 h2 {
-	margin-top:0;
 	font-size:28pt;
+	margin:20pt 0;
 }
 
 h3 {
@@ -44,14 +40,6 @@ h3 {
 
 h4 {
 	font-size:18pt;
-}
-
-hr {
-	height:0;
-	padding:0;
-	margin:20pt 0 6pt;
-	border:none;
-	border-top:1px solid #353535;
 }
 
 img {
@@ -73,14 +61,15 @@ a img {
 }
 
 p {
-	margin:20pt 0 30pt;
+	margin:20pt 0;
 	line-height:1.75em;
 }
 
 ul {
 	list-style:none;
-	padding:0 0 0 30px;
+	padding:0 0 0 20pt;
 	line-height:1.75em;
+	margin:10pt 0;
 }
 
 em {
@@ -132,18 +121,18 @@ div.Wrapper:after {
 	font-family:'Playfair Display', Georgia, serif;
 	font-weight:normal;
 	line-height:1.125em;
+	margin-top:0;
 }
 
 .Profile h3 {
 	font-size:18pt;
-	margin-bottom:10pt;
 }
 
 .Profile .Photo {
 	position:relative;
 	float:left;
 	width:140px;
-	margin:-50pt 20pt 12pt 0;
+	margin:-50pt 20pt 10pt 0;
 }
 
 .Profile .Photo img {
@@ -211,21 +200,19 @@ div.Wrapper:after {
 	content:":";
 }
 
+.Resume > .Wrapper > div {
+	margin-bottom:80px;
+}
+
 .Resume h2 {
 	border-bottom:1px solid #353535;
 	padding-bottom:10pt;
-	margin-bottom:30pt;
 }
 
 .Resume h3 {
 	color:#777;
-	margin:20pt 0 10pt;
 	font-family:'Playfair Display', Georgia, serif;
 	font-weight:normal;
-}
-
-.Resume > .Wrapper > div {
-	margin-bottom:60px;
 }
 
 .Resume .About p {
@@ -257,14 +244,15 @@ div.Wrapper:after {
 }
 
 .Resume .Skills ul {
-	padding-left:60px;
+	margin-top:30pt;
+	padding-left:50pt;
 	font-size:16pt;
 	line-height:2em;
 }
 
 .Resume .Skills ul li {
 	position:relative;
-	margin-bottom:10pt;
+	margin-bottom:16pt;
 }
 
 .Resume .Skills ul li:before {
@@ -278,7 +266,7 @@ div.Wrapper:after {
 
 .Resume .Experience > p {
 	font-size:14pt;
-	margin:0 0 40pt;
+	margin-bottom:30pt;
 }
 
 /*.Resume .Experience .Job h4:before {
@@ -293,6 +281,10 @@ div.Wrapper:after {
 	padding-right:10pt;
 }*/
 
+.Resume .Experience .Job {
+	margin-bottom:40pt;
+}
+
 .Resume .Experience .Job .TimeFrame {
 	color:#aaa;
 	padding-left:1px;
@@ -300,6 +292,11 @@ div.Wrapper:after {
 
 /* l'exception, yo */
 @media screen and (min-width: 860px) {
+
+	h1 {
+		font-size:36pt;
+	}
+
 	.Backdrop {
 		top:-12.5%;
 		min-height:400pt;
@@ -332,16 +329,11 @@ div.Wrapper:after {
 	}
 
 	.Profile .Photo {
-		margin:0 0 20pt 0;
+		margin:0 0 10pt;
 	}
 
 	.Profile .Photo img {
-		/*margin-left:20pt;*/
 		width:66.67%;
-	}
-
-	h1 {
-		font-size:32pt;
 	}
 
 	.Profile h2 {

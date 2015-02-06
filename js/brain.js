@@ -14,9 +14,18 @@ window.brain = new (function Brain(Math) {
 	var AVATAR_DIR = 'media/profiles/';
 	var GIF_FILES = [
 		'pizza.gif',
-		'computers.gif',
-		'burger.gif',
-		'chicken.gif'
+		'chicken.gif',
+		'bacon.gif',
+		'banana.gif',
+		'coffee.gif',
+		'coffeesteam.gif',
+		'future.gif',
+		'makeitrain.gif',
+		'panda.gif',
+		'makeitrain.gif', // yup... happens twice
+		'patrick.gif',
+		'sausages.gif',
+		'ui.gif'
 	];
 	var AVATAR_FILES = [
 		'smug.jpg',
