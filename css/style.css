@@ -82,18 +82,18 @@ em {
 /* Giant gif and some container margins/padding */
 .Backdrop {
 	position:fixed;
-	top:-6.25%;
+	top:0;
 	left:0;
 	min-width:100%;
 	min-height:300pt;
-	min-height:60vh;
+	min-height:50%;
 	z-index:-1;
 }
 
 .Content {
 	background-color:#fff;
-	margin-top:180pt;
-	margin-top:50vh;
+	margin-top:300pt;
+	margin-top:48vh;
 }
 
 div.Wrapper {
@@ -367,7 +367,6 @@ footer p {
 	}
 
 	.Content {
-		margin-top:380pt;
 		padding:0 30pt;
 	}
 

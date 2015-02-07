@@ -21,9 +21,23 @@ window.website = new (function Website(document, brain, scroller) {
 		_back_to_top.addEventListener('click', scroll_to_top, false);
 		_avatar.addEventListener('click', render_avatar, false);
 		_backdrop.addEventListener('click', render_backdrop, false);
+		_backdrop.addEventListener('load', adjust_backdrop, false)
+		window.addEventListener('resize', adjust_backdrop, false);
 
 		start_avatar_timer();
 		start_backdrop_timer();
+	};
+
+	function adjust_backdrop() {
+		var h = window.innerHeight / 2;
+		var img_h = _backdrop.height;
+
+		var offset = Math.round(brain.get_offset(h, img_h));
+
+		if (offset > 0)
+			offset = 0;
+
+		_backdrop.style.top = offset + 'px';
 	};
 
 	function scroll_to_top() {

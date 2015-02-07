@@ -23,7 +23,6 @@ window.brain = new (function Brain(Math) {
 		'panda.gif',
 		'patrick.gif',
 		'sausages.gif',
-		'truth.gif',
 		'internet.gif',
 		'scream.gif',
 		'rugrats.gif',
@@ -62,6 +61,10 @@ window.brain = new (function Brain(Math) {
 
 	this.get_new_avatar = function() {
 		return get_rand_photo(AVATAR_DIR, AVATAR_FILES);
+	};
+
+	this.get_offset = function(a, b) {
+		return (a - b) / 2;
 	};
 
 	this.get_email = function() {
