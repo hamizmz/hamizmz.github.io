@@ -1,0 +1,75 @@
+/* Just some CSS for printing this page, dawg. Best believe. */
+@media print {
+	.Backdrop,
+	.Photo,
+	.Profile .Info > p,
+	.Email span a,
+	.Twitter,
+	.Negative,
+	.Resume .About,
+	.Resume .Experience > p,
+	.Resume button,
+	footer {
+		display:none;
+	}
+
+	.Content, .Profile {
+		margin-top:0;
+	}
+
+	h1 {
+		margin:10pt 0 0;
+		font-size:36pt !important;
+	}
+
+	h2 {
+		margin:10pt 0 20pt !important;
+		font-size:22pt !important;
+	}
+
+	h3 {
+		margin:0 0 10pt !important;
+		font-size:18pt !important;
+	}
+
+	h4, h5 {
+		font-size:16pt !important;
+	}
+
+	ul {
+		font-size:13pt !important;
+		margin:10pt 0 10pt !important;
+	}
+
+	.Wrapper {
+		padding-bottom:20pt !important;
+	}
+
+	.Email span:before {
+		content:"root@graham-robertson.ca";
+		position:relative;
+		top:-1px;
+	}
+
+	.Resume > .Wrapper > div {
+		margin-bottom:30pt;
+	}
+
+	.Skills ul {
+		padding-left:30pt !important;
+	}
+
+	.Skills ul li {
+		margin:0 0 10pt !important;
+	}
+
+	.Skills ul li:before {
+		content:"-" !important;
+		color:#aaa !important;
+		left:-1em !important;
+	}
+
+	.Job {
+		margin:0 !important;
+	}
+}

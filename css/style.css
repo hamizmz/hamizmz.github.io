@@ -291,6 +291,11 @@ div.Wrapper:after {
 	font-size:1.5em;
 }
 
+.Resume .Skills ul li.Negative:before {
+	content:"\2718";
+	color:red;
+}
+
 .Resume .Experience > p {
 	font-style:italic;
 	font-size:16pt;
