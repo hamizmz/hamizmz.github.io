@@ -5,16 +5,17 @@ window.website = new (function Website(document, brain, scroller) {
 	var _backdrop = document.getElementById('backdrop');
 	var _avatar = document.getElementById('avatar');
 	var _email_anchor = document.getElementById('email');
+	var _contact_me = document.getElementById('email_two');
 	var _back_to_top = document.getElementById('top_btn');
 
 	this.physics = null;
 
 	function __main__() {
-		set_email.call(this);
-		render_images.call(this);
-		prepare_events.call(this);
+		set_emails();
+		render_images();
+		prepare_events();
 
-		setup_physics.call(this);
+		setup_physics();
 	};
 
 	function prepare_events() {
@@ -57,17 +58,30 @@ window.website = new (function Website(document, brain, scroller) {
 		render_backdrop.call(this);
 	};
 
-	function set_email() {
-		var e = _email_anchor;
+	function set_emails() {
+		var el = _email_anchor;
+		var email = brain.get_email();
 
-		e.setAttribute(
+		set_email(el, email);
+		render_email(el, email);
+
+		set_email(_contact_me, email);
+	};
+
+	function set_email(el, em) {
+		el.setAttribute(
 			'href',
-			'mailto:' + brain.get_email()
+			'mailto:' + em
 		);
-		e.setAttribute(
+		el.setAttribute(
 			'title',
 			'Graham, I think you are super amazing...'
 		);
+	};
+
+	function render_email(el, em) {
+		// em = em.replace('@', ' at ').replace('.ca', ' dot ca');
+		el.innerHTML = em;
 	};
 
 	function render_avatar() {

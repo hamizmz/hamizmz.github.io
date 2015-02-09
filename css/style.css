@@ -207,20 +207,22 @@ div.Wrapper:after {
 	display:inline-block;
 	float:left;
 	width:60px;
+	padding-right:6pt;
 	font-weight:bold;
 	text-align:right;
 }
 
 .Profile .Contact ul li span {
-	display:inline-block;
-	float:left;
 	color:#656565;
 	font-family:'Playfair Display', Georgia, serif;
-	padding-left:6pt;
 }
 
 .Profile .Contact ul li label:after {
 	content:":";
+}
+
+.Profile .Contact ul li.Email span {
+	font-size:11pt;
 }
 
 .Resume > .Wrapper > div {

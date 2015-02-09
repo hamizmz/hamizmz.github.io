@@ -17,32 +17,45 @@
 		margin-top:0;
 	}
 
+	body {
+		font-size:10pt !important;
+	}
+
+	p {
+		margin:10pt 0 13pt;
+	}
+
 	h1 {
-		margin:10pt 0 0;
-		font-size:36pt !important;
+		margin:10pt 0 6pt;
+		font-size:34pt !important;
 	}
 
 	h2 {
-		margin:10pt 0 20pt !important;
-		font-size:22pt !important;
-	}
-
-	h3 {
 		margin:0 0 10pt !important;
 		font-size:18pt !important;
 	}
 
-	h4, h5 {
+	h3 {
+		margin:0 0 10pt !important;
 		font-size:16pt !important;
 	}
 
-	ul {
+	.Resume h3 {
+		margin:0 0 6pt !important;
+	}
+
+	h4, h5, h6 {
 		font-size:13pt !important;
+		margin:0 0 6pt !important;
+	}
+
+	ul {
+		font-size:12pt !important;
 		margin:10pt 0 10pt !important;
 	}
 
 	.Wrapper {
-		padding-bottom:20pt !important;
+		padding-bottom:10pt !important;
 	}
 
 	.Email span:before {
@@ -52,15 +65,16 @@
 	}
 
 	.Resume > .Wrapper > div {
-		margin-bottom:30pt;
+		margin-bottom:10pt;
 	}
 
 	.Skills ul {
 		padding-left:30pt !important;
+		line-height:1.5em !important;
 	}
 
 	.Skills ul li {
-		margin:0 0 10pt !important;
+		margin:0 0 6pt !important;
 	}
 
 	.Skills ul li:before {
