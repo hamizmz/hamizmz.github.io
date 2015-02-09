@@ -136,6 +136,10 @@ div.Wrapper:after {
 	padding-left:8pt;
 }
 
+.Profile > .Wrapper {
+	padding-right:0;
+}
+
 .Profile h2 {
 	color:#656565;
 	font-family:'Playfair Display', Georgia, serif;
@@ -225,6 +229,14 @@ div.Wrapper:after {
 	font-size:13pt;
 }
 
+.Profile .Attributes:after {
+	content:".";
+	clear:both;
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+
 .Profile .Address {
 	margin-right:20pt;
 }
@@ -236,7 +248,8 @@ div.Wrapper:after {
 	line-height:1.375em;
 }
 
-.Profile .Contact, .Profile .Address {
+.Profile .Contact,
+.Profile .Address {
 	float:left;
 }
 
@@ -252,7 +265,7 @@ div.Wrapper:after {
 	display:inline-block;
 	float:left;
 	width:60px;
-	padding-right:6pt;
+	padding-right:4pt;
 	font-weight:bold;
 	text-align:right;
 }
@@ -466,6 +479,15 @@ footer p {
 	}
 }
 
+@media screen and (max-width: 695px) {
+	.Profile .Contact {
+		width:150pt;
+	}
+
+	.Profile h2 {
+		width:220pt;
+	}
+}
 
 @media screen and (max-width: 470px) {
 	h1 {
@@ -485,6 +507,10 @@ footer p {
 		display:block;
 		margin-top:4pt;
 		line-height:1.125em;
+	}
+
+	.Profile .Contact {
+		width:auto;
 	}
 
 	.Resume .About p {
