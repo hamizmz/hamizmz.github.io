@@ -3,6 +3,7 @@
 	Welcome, fellow CSS enthusiast. I hope you like what you see.
 
 */
+
 * {
 	outline:none;
 }
@@ -164,6 +165,49 @@ div.Wrapper:after {
 	margin-left:-10px;
 }
 
+.Profile .Photo p {
+	position:absolute;
+	top:0;
+	left:60%;
+	opacity:0;
+	min-width:240px;
+
+	background-color:#fff;
+	color:#353535;
+	font-size:15pt;
+	line-height:1.25em;
+	padding:8pt 13pt;
+	border-radius:20px;
+	border-bottom-left-radius:0;
+	box-shadow:0 0 16px rgba(0, 0, 0, 0.48);
+
+	-o-transition:all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Profile .Photo p.Active {
+	top:-55%;
+	opacity:1;
+}
+
+.Profile .Photo p:after {
+	content:"";
+	display:block;
+	position:absolute;
+	left:0;
+	bottom:-18px;
+	border-width:20px 20px 0 0;
+	border-style:solid;
+	border-color:#fff transparent;
+	width:0;
+}
+
+.Profile .Photo p span {
+	font-size:11pt;
+}
+
 .Profile .Info {
 	float:left;
 }
@@ -304,18 +348,6 @@ div.Wrapper:after {
 	margin-bottom:30pt;
 }
 
-/*.Resume .Experience .Job h4:before {
-	content:"\00a0 at";
-	
-	color:#959595;
-	font-family:Georgia;
-	font-size:16pt;
-	font-weight:normal;
-	font-style:italic;
-
-	padding-right:10pt;
-}*/
-
 .Resume .Experience .Job {
 	margin-bottom:40pt;
 }
@@ -323,6 +355,10 @@ div.Wrapper:after {
 .Resume .Experience .Job .TimeFrame {
 	color:#aaa;
 	padding-left:1px;
+}
+
+header {
+	display:block;
 }
 
 footer {

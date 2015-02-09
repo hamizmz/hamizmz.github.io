@@ -34,8 +34,7 @@ window.brain = new (function Brain(Math) {
 		'style.jpg',
 		'anger.jpg',
 		'danger.jpg',
-		'hat.jpg',
-		'peace.jpg'
+		'hat.jpg'
 	];
 
 	// returns a number between 0 and max

@@ -2,6 +2,7 @@ window.website = new (function Website(document, brain, scroller) {
 	var _avatar_timer = null;
 	var _backdrop_timer = null;
 
+	var _tip = document.getElementById('tip');
 	var _backdrop = document.getElementById('backdrop');
 	var _avatar = document.getElementById('avatar');
 	var _email_anchor = document.getElementById('email');
@@ -27,6 +28,7 @@ window.website = new (function Website(document, brain, scroller) {
 
 		start_avatar_timer();
 		start_backdrop_timer();
+		start_show_tip_timer();
 	};
 
 	function adjust_backdrop() {
@@ -51,6 +53,24 @@ window.website = new (function Website(document, brain, scroller) {
 
 	function start_backdrop_timer() {
 		_backdrop_timer = setInterval(render_backdrop, brain.get_num_in_range(8000, 10000));
+	};
+
+	function start_show_tip_timer() {
+		setTimeout(show_tip, brain.get_num_in_range(3000, 6000));
+	};
+
+	function start_hide_tip_timer() {
+		setTimeout(hide_tip, brain.get_num_in_range(8000, 12000));
+	};
+
+	function show_tip() {
+		_tip.className = 'Active';
+		start_hide_tip_timer();
+	};
+
+	function hide_tip() {
+		_tip.className = '';
+		start_show_tip_timer();
 	};
 
 	function render_images() {

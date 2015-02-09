@@ -2,7 +2,8 @@
 @media print {
 	.Backdrop,
 	.Photo,
-	.Profile .Info > p,
+	.Profile h3,
+	.Profile .Info header > p,
 	.Email span a,
 	.Twitter,
 	.Negative,
@@ -17,6 +18,35 @@
 		margin-top:0;
 	}
 
+	.Profile .Info {
+		float:none;
+	}
+
+	.Profile .Info header {
+		float:left;
+		width:40%;
+	}
+
+	.Profile .Info .Attributes {
+		float:right !important;
+		width:60%;
+		text-align:right;
+	}
+
+	.Profile .Info .Address,
+	.Profile .Info .Contact {
+		float:none;
+		margin:0;
+	}
+
+	.Profile .Info .Attributes ul {
+		line-height:1.25em;
+	}
+
+	.Profile .Info .Contact ul li label {
+		float:none;
+	}
+
 	body {
 		font-size:10pt !important;
 	}
@@ -27,17 +57,21 @@
 
 	h1 {
 		margin:10pt 0 6pt;
-		font-size:34pt !important;
+		font-size:32pt !important;
 	}
 
 	h2 {
 		margin:0 0 10pt !important;
-		font-size:18pt !important;
+		font-size:16pt !important;
 	}
 
 	h3 {
 		margin:0 0 10pt !important;
-		font-size:16pt !important;
+		font-size:14pt !important;
+	}
+
+	.Resume h2 {
+		padding-bottom:6pt;
 	}
 
 	.Resume h3 {
