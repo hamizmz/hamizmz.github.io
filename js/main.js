@@ -56,11 +56,11 @@ window.website = new (function Website(document, brain, scroller) {
 	};
 
 	function start_show_tip_timer() {
-		setTimeout(show_tip, brain.get_num_in_range(3000, 6000));
+		setTimeout(show_tip, brain.get_num_in_range(4000, 6000));
 	};
 
 	function start_hide_tip_timer() {
-		setTimeout(hide_tip, brain.get_num_in_range(8000, 12000));
+		setTimeout(hide_tip, brain.get_num_in_range(6000, 10000));
 	};
 
 	function show_tip() {
