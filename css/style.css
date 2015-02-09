@@ -155,22 +155,23 @@ div.Wrapper:after {
 .Profile .Photo {
 	position:relative;
 	float:left;
-	width:140px;
-	margin:-50pt 20pt 10pt 0;
+	width:120px;
+	margin:-50pt 5% 10pt 0;
 }
 
 .Profile .Photo img {
+	width:136px;
 	border:8px solid #fff;
 	border-radius:50%;
-	margin-left:-10px;
+	margin-left:-14px;
 }
 
 .Profile .Photo p {
 	position:absolute;
-	top:0;
-	left:60%;
+	bottom:-25%;
+	left:75%;
 	opacity:0;
-	min-width:240px;
+	min-width:230px;
 
 	background-color:#fff;
 	color:#353535;
@@ -188,7 +189,7 @@ div.Wrapper:after {
 }
 
 .Profile .Photo p.Active {
-	top:-55%;
+	bottom:50%;
 	opacity:1;
 }
 
@@ -403,7 +404,7 @@ footer p {
 }
 
 /* l'exception, yo */
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 880px) {
 
 	h1 {
 		font-size:36pt;
@@ -426,6 +427,10 @@ footer p {
 	.Profile .Photo {
 		width:auto;
 		float:none;
+	}
+
+	.Profile .Photo p {
+		left:50%;
 	}
 
 	.Profile .Info {
@@ -469,6 +474,17 @@ footer p {
 
 	.Profile h2 {
 		font-size:8vw;
+	}
+
+	.Profile .Photo p {
+		min-width:160px;
+		line-height:1.125em;
+	}
+
+	.Profile .Photo p span {
+		display:block;
+		margin-top:4pt;
+		line-height:1.125em;
 	}
 
 	.Resume .About p {
