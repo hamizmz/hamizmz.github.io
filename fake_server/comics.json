@@ -1,0 +1,140 @@
+{
+	"comics": [{
+			"id": 0,
+			"title": "Issue #1",
+			"last_update": 1430333627006,
+			"width": 540,
+			"height": 830,
+			"purchased": true,
+
+			"pages": [
+				{
+					"page": 0,
+					"frames": [0, 11]
+				},
+				{
+					"page": 1,
+					"frames": [0, 87],
+					"transition": true
+				},
+				{
+					"page": 2,
+					"frames": [0, 425],
+					"repeats": false
+				},
+				{
+					"page": 3,
+					"frames": [0, 12],
+					"transition": true
+				},
+				{
+					"page": 4,
+					"frames": [687, 901],
+					"repeats": false
+				},
+				{
+					"page": 5,
+					"frames": [913, 922],
+					"transition": true
+				},
+				{
+					"page": 6,
+					"frames": [0, 141],
+					"repeats": false
+				}
+			]
+		},
+		
+		{
+			"id": 1,
+			"title": "Issue #2: The Sequel",
+			"last_update": 1430333627006,
+			"width": 540,
+			"height": 830,
+			"purchased": true,
+
+			"pages": [
+				{
+					"page": 0,
+					"frames": [0, 11]
+				},
+				{
+					"page": 1,
+					"frames": [0, 87],
+					"transition": true
+				},
+				{
+					"page": 2,
+					"frames": [0, 425],
+					"repeats": false
+				},
+				{
+					"page": 3,
+					"frames": [0, 12],
+					"transition": true
+				},
+				{
+					"page": 4,
+					"frames": [687, 901],
+					"repeats": false
+				},
+				{
+					"page": 5,
+					"frames": [913, 922],
+					"transition": true
+				},
+				{
+					"page": 6,
+					"frames": [0, 141],
+					"repeats": false
+				}
+			]
+		},
+		
+		{
+			"id": 2,
+			"title": "Comic Book #3",
+			"last_update": 1430333627006,
+			"width": 540,
+			"height": 830,
+			"purchased": true,
+
+			"pages": [
+				{
+					"page": 0,
+					"frames": [0, 11]
+				},
+				{
+					"page": 1,
+					"frames": [0, 87],
+					"transition": true
+				},
+				{
+					"page": 2,
+					"frames": [0, 425],
+					"repeats": false
+				},
+				{
+					"page": 3,
+					"frames": [0, 12],
+					"transition": true
+				},
+				{
+					"page": 4,
+					"frames": [687, 901],
+					"repeats": false
+				},
+				{
+					"page": 5,
+					"frames": [913, 922],
+					"transition": true
+				},
+				{
+					"page": 6,
+					"frames": [0, 141],
+					"repeats": false
+				}
+			]
+		}
+	]
+}
