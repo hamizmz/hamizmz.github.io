@@ -10,7 +10,8 @@
 	.Resume .About,
 	.Resume .Experience > p,
 	.Resume button,
-	footer {
+	footer,
+	#layerNeko0 {
 		display:none;
 	}
 
