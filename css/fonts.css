@@ -1,0 +1,27 @@
+@font-face {
+    font-family:ZillaSlab;
+    font-weight:normal;
+    font-style:normal;
+    src:url("../assets/fonts/Zilla_Slab/ZillaSlab-Regular.ttf");
+}
+
+@font-face {
+    font-family:ZillaSlab;
+    font-weight:normal;
+    font-style:italic;
+    src:url("../assets/fonts/Zilla_Slab/ZillaSlab-Italic.ttf");
+}
+
+@font-face {
+    font-family:ZillaSlab;
+    font-weight:bold;
+    font-style:normal;
+    src:url("../assets/fonts/Zilla_Slab/ZillaSlab-Bold.ttf");
+}
+
+@font-face {
+    font-family:ZillaSlab;
+    font-weight:bold;
+    font-style:italic;
+    src:url("../assets/fonts/Zilla_Slab/ZillaSlab-BoldItalic.ttf");
+}
