@@ -1,7 +1,8 @@
 body {
-    background-color:#F3D527;
-    color:#303838;
-    font-family:ZillaSlab;
+    background-color:#f3d527;
+    color:#4f5c5c;
+    font-family:"Open Sans";
+    font-size:11pt;
     padding:0;
     margin:0;
 }
@@ -11,14 +12,44 @@ body > article {
 }
 
 h1 {
+    color:#303838;
     font-family:"Yeseva One";
     line-height:0.85em;
     letter-spacing:-0.06125em;
     font-weight:normal;
 }
 
+menu {
+    line-height:1.5em;
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-family:"Zilla Slab";
+}
+
+menu a {
+    color:#4f5c5c;
+}
+
+#main header {
+    float:left;
+    clear:right;
+}
+
 #main h1 {
     font-size:12vw;
+    margin:0;
+}
+
+#main h2 {
+    font-weight:normal;
+    color:#4f5c5c;
+    text-align:right;
+    font-size:13pt;
+}
+
+#main menu {
+    font-size:18pt;
 }
 
 h1 span.r {
@@ -54,5 +85,14 @@ h1 span.t {
 h1 span.son {
     position:relative;
     top:-0.08125em;
-    left:0.05em;
+    left:0.025em;
+}
+
+a {
+    color:cornflowerblue;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
 }

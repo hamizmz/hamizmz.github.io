@@ -1,27 +1,53 @@
+/* Open Sans */
 @font-face {
-    font-family:ZillaSlab;
+    font-family:"Open Sans";
+    font-weight:normal;
+    font-style:normal;
+    src:url("../assets/fonts/Open_Sans/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family:"Open Sans";
+    font-weight:normal;
+    font-style:italic;
+    src:url("../assets/fonts/Open_Sans/OpenSans-LightItalic.ttf");
+}
+
+@font-face {
+    font-family:"Open Sans";
+    font-weight:bold;
+    font-style:normal;
+    src:url("../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family:"Open Sans";
+    font-weight:bold;
+    font-style:italic;
+    src:url("../assets/fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf");
+}
+
+
+/* Zilla Slab */
+@font-face {
+    font-family:"Zilla Slab";
     font-weight:normal;
     font-style:normal;
     src:url("../assets/fonts/Zilla_Slab/ZillaSlab-Regular.ttf");
 }
 
 @font-face {
-    font-family:ZillaSlab;
+    font-family:"Zilla Slab";
     font-weight:normal;
     font-style:italic;
     src:url("../assets/fonts/Zilla_Slab/ZillaSlab-Italic.ttf");
 }
 
+
+/* Yeseva One */
 @font-face {
-    font-family:ZillaSlab;
+    font-family:"Yeseva One";
     font-weight:bold;
     font-style:normal;
-    src:url("../assets/fonts/Zilla_Slab/ZillaSlab-Bold.ttf");
-}
-
-@font-face {
-    font-family:ZillaSlab;
-    font-weight:bold;
-    font-style:italic;
-    src:url("../assets/fonts/Zilla_Slab/ZillaSlab-BoldItalic.ttf");
+    src:url("../assets/fonts/Yeseva_One/YesevaOne-Regular.ttf");
 }
